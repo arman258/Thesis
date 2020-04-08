@@ -1,0 +1,4 @@
+#Network|Station|Location|Channel|Latitude|Longitude|Elevation|Depth|Azimuth|Dip|SensorDescription|Scale|ScaleFreq|ScaleUnits|SampleRate|StartTime|EndTime
+KO|AKDN||HNE|35.297|32.9683|85.0|0.0|90.0|0.0|100|79664.1|0.05|M/S**2|100.0|2008-01-01T00:00:00|
+KO|AKDN||HNN|35.297|32.9683|85.0|0.0|0.0|0.0|100|79664.1|0.05|M/S**2|100.0|2008-01-01T00:00:00|
+KO|AKDN||HNZ|35.297|32.9683|85.0|0.0|0.0|-90.0|100|79664.1|0.05|M/S**2|100.0|2008-01-01T00:00:00|

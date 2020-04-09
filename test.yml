@@ -1,0 +1,192 @@
+build_report:
+  format: latex
+colocated:
+  preference:
+  - HN?
+  - BN?
+  - HH?
+  - BH?
+duplicate:
+  format_preference:
+  - cosmos
+  - dmg
+  max_dist_tolerance: 500
+  process_level_preference:
+  - V1
+  - V0
+  - V2
+fetchers:
+  CESMDFetcher:
+    email: EMAIL
+    eq_dt: 10
+    eq_radius: 10
+    process_type: raw
+    station_radius: CESMD_RADIUS_KM
+    station_type: Ground
+  FDSNFetcher:
+    channels:
+    - '[BH]N?'
+    exclude_networks:
+    - SY
+    minimum_interstation_distance_in_m: 0.0
+    minimum_length: 0.1
+    network: '*'
+    radius: 4
+    reject_channels_with_gaps: true
+    sanitize: true
+    time_after: 420
+    time_before: 30
+  KNETFetcher:
+    ddepth: 30
+    dmag: 0.3
+    dt: 60
+    password: PASSWORD
+    radius: 100
+    restrict_stations: false
+    user: USERNAME
+  TurkeyFetcher:
+    ddepth: 30
+    dmag: 0.3
+    dt: 16
+    radius: 100
+metrics:
+  fas:
+    bandwidth: 20.0
+    periods:
+      defined_periods:
+      - 0.3
+      num: 3
+      spacing: linspace
+      start: 1.0
+      stop: 3.0
+      use_array: true
+    smoothing: konno_ohmachi
+  output_imcs:
+  - greater_of_two_horizontals
+  - channels
+  output_imts:
+  - PGA
+  - PGV
+  - SA
+  sa:
+    damping: 0.05
+    periods:
+      defined_periods:
+      - 0.3
+      num: 3
+      spacing: linspace
+      start: 1.0
+      stop: 3.0
+      use_array: true
+pickers:
+  ar:
+    f1: 1.0
+    f2: 20.0
+    l_p: 0.1
+    l_s: 0.2
+    lta_p: 1.0
+    lta_s: 4.0
+    m_p: 2
+    m_s: 8
+    s_pick: false
+    sta_p: 0.1
+    sta_s: 1.0
+  baer:
+    p_dur: 100
+    preset_len: 100
+    tdownmax: 20
+    thr1: 7.0
+    thr2: 12.0
+    tupevent: 60
+  kalkan:
+    damping: 0.6
+    nbins: None
+    peak_selection: false
+    period: None
+  p_arrival_shift: 0.0
+  power:
+    hanningWindow: 3.0
+    highpass: 1.4
+    lowpass: 6
+    lta: 20.0
+    order: 3
+    sta: 3.0
+    sta2: 3.0
+    threshDetect: 2.5
+    threshDetect2: 2.5
+    threshRestart: 1.5
+  travel_time:
+    model: iasp91
+processing:
+- check_free_field:
+    reject_non_free_field: true
+- max_traces:
+    n_max: 3
+- min_sample_rate:
+    min_sps: 20.0
+- detrend:
+    detrending_method: demean
+- check_zero_crossings:
+    min_crossings: 0.1
+- remove_response:
+    f1: 0.001
+    f2: 0.005
+    f3: null
+    f4: null
+    output: ACC
+    water_level: 60
+- detrend:
+    detrending_method: linear
+- detrend:
+    detrending_method: demean
+# - compute_snr:
+#     bandwidth: 20.0
+#     check:
+#       max_freq: 5.0
+#       min_freq: 0.2
+#       threshold: 3.0
+- get_corner_frequencies:
+    constant:
+      highpass: 0.08
+      lowpass: 20.0
+    method: constant
+    snr:
+      same_horiz: true
+- lowpass_max_frequency:
+    fn_fac: 0.75
+- cut:
+    sec_before_split: 2.0
+- taper:
+    side: both
+    type: hann
+    width: 0.05
+- highpass_filter:
+    filter_order: 5
+    number_of_passes: 2
+- lowpass_filter:
+    filter_order: 5
+    number_of_passes: 2
+- fit_spectra:
+    FSE: 2.0
+    R0: 1.0
+    RP: 0.55
+    VHC: 0.7071068
+    density: 2.8
+    kappa: 0.035
+    max_stress: 10000
+    min_stress: 0.1
+    moment_factor: 100
+    shear_vel: 3.7
+read:
+  resample_rate: 200
+windows:
+  signal_end:
+    epsilon: 2.0
+    floor: 120
+    method: model
+    model: AS16
+    vmin: 1.0
+  window_checks:
+    do_check: true
+    min_noise_duration: 1.0
+    min_signal_duration: 5.0

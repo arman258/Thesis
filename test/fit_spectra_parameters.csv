@@ -1,0 +1,1 @@
+EarthquakeId,EarthquakeTime,EarthquakeLatitude,EarthquakeLongitude,EarthquakeDepth,EarthquakeMagnitude,EarthquakeMagnitudeType,TraceID,StationLatitude,StationLongitude,StationElevation,fmin,fmax,epi_dist,f0,kappa,magnitude,minimize_message,minimize_success,moment,moment_lnsd,stress_drop,stress_drop_lnsd

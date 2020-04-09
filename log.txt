@@ -1,0 +1,149 @@
+Downloading/loading raw streams...
+Could not instantiate Fetcher CESMDFetcher, due to error
+"could not convert string to float: 'CESMD_RADIUS_KM'"
+Could not instantiate Fetcher KNETFetcher, due to error
+"Username/password are required to retrieve KNET/KikNET
+data. This tool can download data from the Japanese NIED
+website. However, for this to work you will first need
+to obtain a username and password from this website:
+https://hinetwww11.bosai.go.jp/nied/registration/?LANG=en
+Then create a custom config file by running the gmsetup
+program, and edit the fetchers:KNETFetcher section
+to use your username and password."
+Initializing FDSN client(s) for http://eida.bgr.de, http://eida.ethz.ch, http://www.seismicportal.eu, http://service.geonet.org.nz, http://geofon.gfz-potsdam.de, http://ws.icgc.cat, http://webservices.ingv.it, http://ws.ipgp.fr, http://service.iris.edu, http://isc-mirror.iris.washington.edu, http://rdsa.knmi.nl, http://eida.koeri.boun.edu.tr, http://erde.geophysik.uni-muenchen.de, http://service.ncedc.org, http://eida-sc3.infp.ro, http://eida.gein.noa.gr, http://www.orfeus-eu.org, http://www.orfeus-eu.org, http://ws.resif.fr, http://fdsnws.raspberryshakedata.com, http://service.scedc.caltech.edu, http://rtserve.beg.utexas.edu, http://earthquake.usgs.gov, http://sismo.iag.usp.br.
+Cannot use client 'http://www.seismicportal.eu' as it does not have 'dataselect' and/or 'station' services.
+Cannot use client 'http://isc-mirror.iris.washington.edu' as it does not have 'dataselect' and/or 'station' services.
+Cannot use client 'http://earthquake.usgs.gov' as it does not have 'dataselect' and/or 'station' services.
+Successfully initialized 20 client(s): http://eida.bgr.de, http://eida.ethz.ch, http://service.geonet.org.nz, http://geofon.gfz-potsdam.de, http://ws.icgc.cat, http://webservices.ingv.it, http://ws.ipgp.fr, http://service.iris.edu, http://rdsa.knmi.nl, http://eida.koeri.boun.edu.tr, http://erde.geophysik.uni-muenchen.de, http://service.ncedc.org, http://eida-sc3.infp.ro, http://eida.gein.noa.gr, http://www.orfeus-eu.org, http://ws.resif.fr, http://fdsnws.raspberryshakedata.com, http://service.scedc.caltech.edu, http://rtserve.beg.utexas.edu, http://sismo.iag.usp.br.
+Deleting old MiniSEED files...
+Deleting old PNG files...
+Deleting old XML files...
+Downloading new MiniSEED files...
+Total acquired or preexisting stations: 0
+Client 'http://eida.bgr.de' - Requesting reliable availability.
+Client 'http://eida.bgr.de' - No data available for request.
+Client 'http://eida.bgr.de' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://eida.ethz.ch' - Requesting reliable availability.
+Client 'http://eida.ethz.ch' - No data available for request.
+Client 'http://eida.ethz.ch' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://service.geonet.org.nz' - Requesting unreliable availability.
+Client 'http://service.geonet.org.nz' - No data available for request.
+Client 'http://service.geonet.org.nz' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://geofon.gfz-potsdam.de' - Requesting unreliable availability.
+Client 'http://geofon.gfz-potsdam.de' - No data available for request.
+Client 'http://geofon.gfz-potsdam.de' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://ws.icgc.cat' - Requesting unreliable availability.
+Client 'http://ws.icgc.cat' - No data available for request.
+Client 'http://ws.icgc.cat' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://webservices.ingv.it' - Requesting unreliable availability.
+Client 'http://webservices.ingv.it' - No data available for request.
+Client 'http://webservices.ingv.it' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://ws.ipgp.fr' - Requesting unreliable availability.
+Client 'http://ws.ipgp.fr' - No data available for request.
+Client 'http://ws.ipgp.fr' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://service.iris.edu' - Requesting reliable availability.
+Client 'http://service.iris.edu' - Successfully requested availability (1.40 seconds)
+Client 'http://service.iris.edu' - Found 0 stations (0 channels).
+Client 'http://service.iris.edu' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://rdsa.knmi.nl' - Requesting unreliable availability.
+Client 'http://rdsa.knmi.nl' - No data available for request.
+Client 'http://rdsa.knmi.nl' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://eida.koeri.boun.edu.tr' - Requesting reliable availability.
+Client 'http://eida.koeri.boun.edu.tr' - No data available for request.
+Client 'http://eida.koeri.boun.edu.tr' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://erde.geophysik.uni-muenchen.de' - Requesting unreliable availability.
+Client 'http://erde.geophysik.uni-muenchen.de' - No data available for request.
+Client 'http://erde.geophysik.uni-muenchen.de' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://service.ncedc.org' - Requesting unreliable availability.
+Client 'http://service.ncedc.org' - No data available for request.
+Client 'http://service.ncedc.org' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://eida-sc3.infp.ro' - Requesting unreliable availability.
+Client 'http://eida-sc3.infp.ro' - No data available for request.
+Client 'http://eida-sc3.infp.ro' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://eida.gein.noa.gr' - Requesting reliable availability.
+Client 'http://eida.gein.noa.gr' - No data available for request.
+Client 'http://eida.gein.noa.gr' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://www.orfeus-eu.org' - Requesting unreliable availability.
+Client 'http://www.orfeus-eu.org' - No data available for request.
+Client 'http://www.orfeus-eu.org' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://ws.resif.fr' - Requesting reliable availability.
+Client 'http://ws.resif.fr' - No data available for request.
+Client 'http://ws.resif.fr' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://fdsnws.raspberryshakedata.com' - Requesting unreliable availability.
+Client 'http://fdsnws.raspberryshakedata.com' - No data available for request.
+Client 'http://fdsnws.raspberryshakedata.com' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://service.scedc.caltech.edu' - Requesting unreliable availability.
+Client 'http://service.scedc.caltech.edu' - No data available for request.
+Client 'http://service.scedc.caltech.edu' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://rtserve.beg.utexas.edu' - Requesting reliable availability.
+Client 'http://rtserve.beg.utexas.edu' - No data available for request.
+Client 'http://rtserve.beg.utexas.edu' - No data available.
+Total acquired or preexisting stations: 0
+Client 'http://sismo.iag.usp.br' - Requesting unreliable availability.
+Client 'http://sismo.iag.usp.br' - No data available for request.
+Client 'http://sismo.iag.usp.br' - No data available.
+============================== Final report
+0 MiniSEED files [0.0 MB] already existed.
+0 StationXML files [0.0 MB] already existed.
+Client 'http://eida.bgr.de' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://eida.bgr.de' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://eida.ethz.ch' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://eida.ethz.ch' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://service.geonet.org.nz' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://service.geonet.org.nz' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://geofon.gfz-potsdam.de' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://geofon.gfz-potsdam.de' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://ws.icgc.cat' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://ws.icgc.cat' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://webservices.ingv.it' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://webservices.ingv.it' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://ws.ipgp.fr' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://ws.ipgp.fr' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://service.iris.edu' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://service.iris.edu' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://rdsa.knmi.nl' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://rdsa.knmi.nl' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://eida.koeri.boun.edu.tr' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://eida.koeri.boun.edu.tr' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://erde.geophysik.uni-muenchen.de' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://erde.geophysik.uni-muenchen.de' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://service.ncedc.org' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://service.ncedc.org' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://eida-sc3.infp.ro' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://eida-sc3.infp.ro' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://eida.gein.noa.gr' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://eida.gein.noa.gr' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://www.orfeus-eu.org' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://www.orfeus-eu.org' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://ws.resif.fr' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://ws.resif.fr' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://fdsnws.raspberryshakedata.com' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://fdsnws.raspberryshakedata.com' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://service.scedc.caltech.edu' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://service.scedc.caltech.edu' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://rtserve.beg.utexas.edu' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://rtserve.beg.utexas.edu' - Acquired 0 StationXML files [0.0 MB].
+Client 'http://sismo.iag.usp.br' - Acquired 0 MiniSEED files [0.0 MB].
+Client 'http://sismo.iag.usp.br' - Acquired 0 StationXML files [0.0 MB].
+Downloaded 0.0 MB in total.
+No event matching 2016-03-22 14:23:10.600000 M4.1 (35.4200,32.5400) found by class <gmprocess.io.nsmn.turkey_fetcher.TurkeyFetcher object at 0x7f29226d9810>
+Finishing event us20005c9s
+1 workspace files created

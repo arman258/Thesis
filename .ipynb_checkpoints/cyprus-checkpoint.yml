@@ -1,0 +1,14 @@
+fetchers:
+  FDSNFetcher:
+    channels:
+    - '[BH]N?'
+    exclude_networks:
+    - SY
+    minimum_interstation_distance_in_m: 0.0
+    minimum_length: 0.1
+    network: '*'
+    radius: 10
+    reject_channels_with_gaps: true
+    sanitize: true
+    time_after: 420
+    time_before: 120
